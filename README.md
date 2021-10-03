@@ -10,6 +10,18 @@ Token API service for creating new projects, adding, minting NFT's with extended
 git clone https://github.com/Explory/token-api.git
 
 yarn
+
+mkdir config
+touch config/default.json
+
+{
+  "NftMaker": {
+    "apiKey": "",
+    "apiUrl": ""
+  }
+}
+
+
 yarn build
 yarn start
 
