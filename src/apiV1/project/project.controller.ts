@@ -22,7 +22,7 @@ export default class ProjectController {
 
   public createProject = async (req: Request, res: Response): Promise<any> => {
     try {
-      if (!req.body) {
+      if (!req.body.projectname) {
         throw new Error("Missing body params.");
       }
 
@@ -34,7 +34,7 @@ export default class ProjectController {
     } catch (err) {
       res.status(500).send({
         success: false,
-        message: err.toString()
+        message: err.data.errorMessage
       });
     }
   };
