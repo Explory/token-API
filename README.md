@@ -17,7 +17,7 @@ touch config/default.json
 {
   "NftMaker": {
     "apiKey": "",
-    "apiUrl": ""
+    "apiUrl": "https://api.nft-maker.io"
   }
 }
 
